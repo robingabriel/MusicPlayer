@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradbg1"
+    android:id="@+id/login_view"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/regular"/>
+
+    </LinearLayout>
+
+
+    <!--    Bottom Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--    Username input field    -->
+        <EditText
+            android:id="@+id/login_usr_edit"
+            android:layout_width="240dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_edit_text"
+            android:fontFamily="@font/regular"
+            android:hint="Username" />
+
+        <!--    Password input field    -->
+        <EditText
+            android:id="@+id/login_pass_edit"
+            android:layout_width="240dp"
+            android:layout_height="38dp"
+            android:inputType="textPassword"
+            android:background="@drawable/round_edit_text"
+            android:fontFamily="@font/regular"
+            android:hint="Password" />
+
+        <!--    Login Button    -->
+        <Button
+            android:id="@+id/login_login_btn"
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/round_btn"
+            android:fontFamily="@font/regular"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorDarkPurple"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/regular"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="Not a member yet?" />
+
+            <!--    Register Text   -->
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginLeft="5dp"
+                android:text="Register Here!"
+                android:textColor="@color/colorCeruleanBlue"
+                android:textSize="16dp"
+                android:id="@+id/login_regis_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
